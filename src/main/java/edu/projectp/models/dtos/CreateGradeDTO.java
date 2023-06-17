@@ -8,12 +8,12 @@ import lombok.Data;
 
 @Data
 public class CreateGradeDTO {
-    @NotNull(message = "Student id cannot be null")
+    @NotNull(message = "El ID del Estudiante no puede ser nulo")
     private Integer studentId;
-    @NotNull(message = "Course id cannot be null")
+    @NotNull(message = "El Curso no puede ser nulo")
     private Integer courseId;
-    @NotNull(message = "Total cannot be null")
-    @Max(value = 100, message = "Total cannot be greater than 100")
-    @Min(value = 0, message = "Total cannot be less than 0")
+    @NotNull(message = "El Total no puede ser nulo")
+    @Max(value = 100, message = "El total de la Calificación no puede ser mayor a 100")
+    @Min(value = 0, message = "El Total de la Calificación no puede ser menor a 0")
     private Integer total;
 }

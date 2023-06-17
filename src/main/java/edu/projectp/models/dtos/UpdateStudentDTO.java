@@ -7,10 +7,10 @@ import lombok.Data;
 
 @Data
 public class UpdateStudentDTO {
-    @NotNull(message = "Name cannot be null")
-    @NotBlank(message = "Name cannot be blank")
+    @NotNull(message = "El Nombre no puede ser nulo")
+    @NotBlank(message = "El nombre no puede estar en blanco")
     private String name;
-    @NotNull(message = "Age cannot be null")
-    @Min(value = 19,message = "Age must be greater than 18")
+    @NotNull(message = "La edad no puede ser nula")
+    @Min(value = 19,message = "La edad debe de ser mayor a 18")
     private Integer age;
 }

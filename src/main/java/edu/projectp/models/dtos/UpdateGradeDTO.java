@@ -7,8 +7,8 @@ import lombok.Data;
 
 @Data
 public class UpdateGradeDTO {
-    @NotNull(message = "Total cannot be null")
-    @Max(value = 100, message = "Total cannot be greater than 100")
-    @Min(value = 0, message = "Total cannot be less than 0")
+    @NotNull(message = "El Total de la Calificación no puede ser nulo")
+    @Max(value = 100, message = "El Total de la Calificación no puede ser mayor a 100")
+    @Min(value = 0, message = "El Total de la Calificación no puede ser menor a 0")
     private Integer total;
 }

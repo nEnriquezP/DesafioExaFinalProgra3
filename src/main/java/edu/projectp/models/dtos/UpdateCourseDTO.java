@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class UpdateCourseDTO {
-    @NotNull(message = "Name cannot be null")
-    @NotBlank(message = "Name cannot be blank")
+    @NotNull(message = "El nombre del Curso no puede ser nulo")
+    @NotBlank(message = "El nomnbre del Curso no puede estar en blanco")
     private String name;
 }
